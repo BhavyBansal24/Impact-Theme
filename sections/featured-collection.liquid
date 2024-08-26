@@ -30,9 +30,6 @@
       --product-list-carousel-item-width: calc(var(--container-inner-width) / {{ section.settings.products_per_row_desktop }} - (var(--product-list-column-gap) / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}));
     }
   }
-
-
-  
 </style>
 
 <div {% render 'section-properties' %}>
@@ -45,7 +42,7 @@
 
       <scroll-carousel selector="product-card" id="{{ scroll_area_id }}" class="scroll-area bleed {% if section.settings.products_count > section.settings.products_per_row_desktop %}is-scrollable{% endif %}">
         <reveal-items selector=".product-list > *">
-          <product-list class="product-list aaa">
+          <product-list class="product-list">
             {%- assign products = section.settings.products | default: section.settings.collection.products -%}
 
             {%- for product in products limit: section.settings.products_count -%}

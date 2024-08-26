@@ -40,7 +40,7 @@
 </style>
 
 <div {% render 'section-properties', tight: true %}>
-  <div class="product ssdsd">
+  <div class="product">
     {%- if product.media.size > 0 -%}
       {%- render 'product-gallery', product: product -%}
     {%- endif -%}
@@ -477,6 +477,13 @@ quick buy information in a template, that will be extracted in JS, but ensure it
           "default": true
         },
         {
+          "type": "checkbox",
+          "id": "show_gift_card_recipient",
+          "label": "Show recipient information form for gift cards",
+          "info": "Allow buyers to send gift cards along with a personal message. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)",
+          "default": true
+        },
+        {
           "type": "color",
           "id": "atc_button_background",
           "label": "Add to cart background"
@@ -495,23 +502,6 @@ quick buy information in a template, that will be extracted in JS, but ensure it
           "type": "color",
           "id": "payment_button_text_color",
           "label": "Buy now button color"
-        }
-      ]
-    },
-    {
-      "type": "addon_product",
-      "name": "Addon product",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "product",
-          "id": "addon_product1",
-          "label": "Addon product 1"
-        },
-        {
-          "type": "product",
-          "id": "addon_product2",
-          "label": "Addon product 2"
         }
       ]
     },

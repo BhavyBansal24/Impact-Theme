@@ -367,7 +367,7 @@ if (!window.customElements.get("next-button")) {
 }
 
 // js/common/actions/copy-button.js
-import { timeline } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { timeline } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var CopyButton = class extends HTMLButtonElement {
   constructor() {
     super();
@@ -410,7 +410,7 @@ if (!window.customElements.get("copy-button")) {
 }
 
 // js/common/actions/custom-button.js
-import { animate, timeline as timeline2, stagger } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { animate, timeline as timeline2, stagger } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var CustomButton = class extends HTMLButtonElement {
   static get observedAttributes() {
     return ["aria-busy"];
@@ -479,7 +479,7 @@ if (!window.customElements.get("share-button")) {
 }
 
 // js/common/animation/heading.js
-import { stagger as stagger2 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { stagger as stagger2 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 function getHeadingKeyframe(element, options = {}) {
   if (!element) {
     return [];
@@ -504,7 +504,7 @@ function getHeadingKeyframe(element, options = {}) {
 }
 
 // js/common/animation/reveal-items.js
-import { animate as animate2, stagger as stagger3, inView } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { animate as animate2, stagger as stagger3, inView } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var _reveal, reveal_fn;
 var RevealItems = class extends HTMLElement {
   constructor() {
@@ -685,7 +685,7 @@ if (!window.customElements.get("height-observer")) {
 }
 
 // js/common/behavior/safe-sticky.js
-import { inView as inView2 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { inView as inView2 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var _resizeObserver, _checkPositionListener, _initialTop, _lastKnownY, _currentTop, _position, _recalculateStyles, recalculateStyles_fn, _checkPosition, checkPosition_fn;
 var SafeSticky = class extends HTMLElement {
   constructor() {
@@ -755,7 +755,7 @@ var ScrollArea = class {
     this._allowTriggerLeavingStartEvent = true;
     this._allowTriggerNearingEndEvent = true;
     this._allowTriggerLeavingEndEvent = false;
-    new ResizeObserver(throttle(this._checkIfScrollable.bind(this))).observe(element);
+    new ResizeObserver(this._checkIfScrollable.bind(this)).observe(element);
     this._element.addEventListener("scroll", throttle(this._onScroll.bind(this)), { signal: abortController2?.signal });
   }
   get scrollNearingThreshold() {
@@ -989,7 +989,7 @@ if (!window.customElements.get("split-lines")) {
 }
 
 // js/common/behavior/visibility-progress.js
-import { scroll } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { scroll } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var VisibilityProgress = class extends HTMLElement {
   connectedCallback() {
     scroll((info) => {
@@ -1005,7 +1005,7 @@ if (!window.customElements.get("visibility-progress")) {
 }
 
 // js/common/carousel/effect-carousel.js
-import { timeline as timeline3, inView as inView3 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { timeline as timeline3, inView as inView3 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 
 // js/common/carousel/base-carousel.js
 var BaseCarousel = class extends HTMLElement {
@@ -1253,7 +1253,7 @@ if (!window.customElements.get("scroll-carousel")) {
 }
 
 // js/common/cart/cart-count.js
-import { animate as animate3 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { animate as animate3 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 
 // js/common/cart/fetch-cart.js
 var createCartPromise = () => {
@@ -1316,12 +1316,12 @@ if (!window.customElements.get("cart-count")) {
 }
 
 // js/common/cart/cart-drawer.js
-import { animate as animate4 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { animate as animate4 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 
 // js/common/overlay/dialog-element.js
-import { FocusTrap, Delegate } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { FocusTrap, Delegate } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var _lockLayerCount, _isLocked;
-var _DialogElement = class extends HTMLElement {
+var _DialogElement = class _DialogElement extends HTMLElement {
   constructor() {
     super();
     __privateAdd(this, _isLocked, false);
@@ -1505,10 +1505,10 @@ var _DialogElement = class extends HTMLElement {
     this.open ? this.hide() : this.show();
   }
 };
-var DialogElement = _DialogElement;
 _lockLayerCount = new WeakMap();
 _isLocked = new WeakMap();
-__privateAdd(DialogElement, _lockLayerCount, 0);
+__privateAdd(_DialogElement, _lockLayerCount, 0);
+var DialogElement = _DialogElement;
 var CloseButton = class extends HTMLButtonElement {
   constructor() {
     super();
@@ -1523,7 +1523,7 @@ if (!window.customElements.get("close-button")) {
 }
 
 // js/common/overlay/drawer.js
-import { animate as motionAnimate, timeline as motionTimeline } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { animate as motionAnimate, timeline as motionTimeline } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var reduceDrawerAnimation = window.matchMedia("(prefers-reduced-motion: reduce)").matches || JSON.parse("false");
 var Drawer = class extends DialogElement {
   constructor() {
@@ -1553,13 +1553,13 @@ var Drawer = class extends DialogElement {
   _getClipPathProperties() {
     switch (this.openFrom) {
       case "left":
-        return document.dir === "ltr" ? ["inset(0 100% 0 0 round 8px)", "inset(0 0 0 0 round 8px"] : ["inset(0 0 0 100% round 8px)", "inset(0 0 0 0 round 8px"];
+        return document.dir === "ltr" ? ["inset(0 100% 0 0 round var(--rounded-sm))", "inset(0 0 0 0 round var(--rounded-sm))"] : ["inset(0 0 0 100% round var(--rounded-sm))", "inset(0 0 0 0 round var(--rounded-sm))"];
       case "right":
-        return document.dir === "ltr" ? ["inset(0 0 0 100% round 8px)", "inset(0 0 0 0 round 8px"] : ["inset(0 100% 0 0 round 8px)", "inset(0 0 0 0 round 8px"];
+        return document.dir === "ltr" ? ["inset(0 0 0 100% round var(--rounded-sm))", "inset(0 0 0 0 round var(--rounded-sm)"] : ["inset(0 100% 0 0 round var(--rounded-sm))", "inset(0 0 0 0 round var(--rounded-sm))"];
       case "bottom":
-        return ["inset(100% 0 0 0 round 8px)", "inset(0 0 0 0 round 8px"];
+        return ["inset(100% 0 0 0 round var(--rounded-sm))", "inset(0 0 0 0 round var(--rounded-sm))"];
       case "top":
-        return ["inset(0 0 100% 0 round 8px)", "inset(0 0 0 0 round 8px"];
+        return ["inset(0 0 100% 0 round var(--rounded-sm))", "inset(0 0 0 0 round var(--rounded-sm))"];
     }
   }
   _setInitialPosition() {
@@ -1612,7 +1612,7 @@ if (!window.customElements.get("x-drawer")) {
 }
 
 // js/common/overlay/popover.js
-import { animate as motionAnimate2, timeline as motionTimeline2 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { animate as motionAnimate2, timeline as motionTimeline2 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var Popover = class extends DialogElement {
   constructor() {
     super();
@@ -1696,7 +1696,7 @@ if (!window.customElements.get("x-popover")) {
 }
 
 // js/common/overlay/privacy-bar.js
-import { Delegate as Delegate2 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { Delegate as Delegate2 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var PrivacyBar = class extends HTMLElement {
   constructor() {
     super();
@@ -1727,15 +1727,15 @@ var PrivacyBar = class extends HTMLElement {
     this.hidden = true;
   }
   _onConsentLibraryLoaded() {
-    if (window.Shopify.customerPrivacy.shouldShowGDPRBanner()) {
+    if (window.Shopify.customerPrivacy?.shouldShowBanner()) {
       this.show();
     }
   }
   _acceptPolicy() {
-    window.Shopify.customerPrivacy.setTrackingConsent(true, this.hide.bind(this));
+    window.Shopify.customerPrivacy?.setTrackingConsent(true, this.hide.bind(this));
   }
   _declinePolicy() {
-    window.Shopify.customerPrivacy.setTrackingConsent(false, this.hide.bind(this));
+    window.Shopify.customerPrivacy?.setTrackingConsent(false, this.hide.bind(this));
   }
 };
 if (!window.customElements.get("privacy-bar")) {
@@ -1819,7 +1819,7 @@ var CartDrawer = class extends Drawer {
    */
   async _onCartRefresh() {
     const tempDiv = document.createElement("div");
-    tempDiv.innerHTML = await (await fetch(`${window.Shopify.routes.root}?section_id=cart-drawer`)).text();
+    tempDiv.innerHTML = await (await fetch(`${window.Shopify.routes.root}?section_id=${extractSectionId(this)}`)).text();
     this.replaceChildren(...tempDiv.querySelector("#cart-drawer").children);
   }
 };
@@ -2095,7 +2095,7 @@ var ShippingEstimator = class extends HTMLElement {
     this.resultsElement.innerHTML = `
       <div class="v-stack gap-2">
         <p>${shippingRates.length === 0 ? window.themeVariables.strings.shippingEstimatorNoResults : shippingRates.length === 1 ? window.themeVariables.strings.shippingEstimatorOneResult : window.themeVariables.strings.shippingEstimatorMultipleResults}</p>
-        ${formattedShippingRates === "" ? "" : `<ul class="list-disc" role="list">${formattedShippingRates}</ul>`}
+        ${formattedShippingRates === "" ? "" : `<ul class="list-disc" role="list">${formattedShippingRates.join("")}</ul>`}
       </div>
     `;
   }
@@ -2164,7 +2164,7 @@ if (!window.customElements.get("facet-drawer")) {
 }
 
 // js/common/facets/facet-floating-filter.js
-import { animate as animate5 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { animate as animate5 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var FacetFloatingFilter = class extends HTMLElement {
   connectedCallback() {
     new IntersectionObserver(this._onFooterVisibilityChanged.bind(this), { rootMargin: "50px 0px" }).observe(document.querySelector(".shopify-section--footer"));
@@ -2315,7 +2315,7 @@ if (!window.customElements.get("facet-sort-by")) {
 }
 
 // js/common/feedback/pill-loader.js
-import { animate as animate6, timeline as timeline4, stagger as stagger4 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { animate as animate6, timeline as timeline4, stagger as stagger4 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var PillLoader = class extends HTMLElement {
   static get observedAttributes() {
     return ["aria-busy"];
@@ -2626,6 +2626,37 @@ function createMediaImg(media, widths = [], properties = {}) {
   return image;
 }
 
+// js/common/product/gift-card-recipient.js
+var _recipientCheckbox, _recipientOtherProperties, _recipientFieldsContainer, _synchronizeProperties, synchronizeProperties_fn;
+var GiftCardRecipient = class extends HTMLElement {
+  constructor() {
+    super(...arguments);
+    __privateAdd(this, _synchronizeProperties);
+    __privateAdd(this, _recipientCheckbox, void 0);
+    __privateAdd(this, _recipientOtherProperties, []);
+    __privateAdd(this, _recipientFieldsContainer, void 0);
+  }
+  connectedCallback() {
+    const properties = Array.from(this.querySelectorAll('[name*="properties"]')), checkboxPropertyName = "properties[__shopify_send_gift_card_to_recipient]";
+    __privateSet(this, _recipientCheckbox, properties.find((input) => input.name === checkboxPropertyName));
+    __privateSet(this, _recipientOtherProperties, properties.filter((input) => input.name !== checkboxPropertyName));
+    __privateSet(this, _recipientFieldsContainer, this.querySelector(".gift-card-recipient__fields"));
+    __privateGet(this, _recipientCheckbox)?.addEventListener("change", __privateMethod(this, _synchronizeProperties, synchronizeProperties_fn).bind(this));
+    __privateMethod(this, _synchronizeProperties, synchronizeProperties_fn).call(this);
+  }
+};
+_recipientCheckbox = new WeakMap();
+_recipientOtherProperties = new WeakMap();
+_recipientFieldsContainer = new WeakMap();
+_synchronizeProperties = new WeakSet();
+synchronizeProperties_fn = function() {
+  __privateGet(this, _recipientOtherProperties).forEach((property) => property.disabled = !__privateGet(this, _recipientCheckbox).checked);
+  __privateGet(this, _recipientFieldsContainer).classList.toggle("js:hidden", !__privateGet(this, _recipientCheckbox).checked);
+};
+if (!window.customElements.get("gift-card-recipient")) {
+  window.customElements.define("gift-card-recipient", GiftCardRecipient);
+}
+
 // js/common/product/product-loader.js
 var ProductLoader = class {
   static load(productHandle) {
@@ -2635,10 +2666,18 @@ var ProductLoader = class {
     if (this.loadedProducts[productHandle]) {
       return this.loadedProducts[productHandle];
     }
-    this.loadedProducts[productHandle] = new Promise(async (resolve) => {
+    this.loadedProducts[productHandle] = new Promise(async (resolve, reject) => {
       const response = await fetch(`${Shopify.routes.root}products/${productHandle}.js`);
-      const responseAsJson = await response.json();
-      resolve(responseAsJson);
+      if (response.ok) {
+        const responseAsJson = await response.json();
+        resolve(responseAsJson);
+      } else {
+        reject(`
+          Attempted to load information for product with handle ${productHandle}, but this product is in "draft" mode. You won't be able to
+          switch between variants or access to per-variant information. To fully preview this product, change temporarily its status
+          to "active".
+        `);
+      }
     });
     return this.loadedProducts[productHandle];
   }
@@ -2646,7 +2685,7 @@ var ProductLoader = class {
 __publicField(ProductLoader, "loadedProducts", {});
 
 // js/common/product/product-card.js
-import { Delegate as Delegate3 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { Delegate as Delegate3 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var ProductCard = class extends HTMLElement {
   constructor() {
     super();
@@ -3070,7 +3109,7 @@ if (!window.customElements.get("variant-sku")) {
 }
 
 // js/common/product/product-gallery.js
-import { PhotoSwipeLightbox } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { PhotoSwipeLightbox } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var ProductGallery = class extends HTMLElement {
   constructor() {
     super();
@@ -3098,7 +3137,7 @@ var ProductGallery = class extends HTMLElement {
       return this._photoswipe;
     }
     const photoswipe = new PhotoSwipeLightbox({
-      pswpModule: () => import("//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/photoswipe.min.js?v=159632402815393782351680928801"),
+      pswpModule: () => import("//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/photoswipe.min.js?v=96595610301167188461691263407"),
       bgOpacity: 1,
       maxZoomLevel: parseInt(this.getAttribute("allow-zoom")) || 3,
       closeTitle: window.themeVariables.strings.closeGallery,
@@ -3249,7 +3288,8 @@ var MediaCarousel = class extends ScrollCarousel {
   _onGestureChanged(event) {
     event.preventDefault();
     if (event.scale > 1.5) {
-      this.dispatchEvent(new CustomEvent("lightbox:open", { bubbles: true, detail: { index: this.selectedIndexAmongVisible } }));
+      const visibleImages = this.visibleItems.filter((item) => item.getAttribute("data-media-type") === "image"), openIndex = visibleImages.indexOf(this.selectedSlide);
+      this.dispatchEvent(new CustomEvent("lightbox:open", { bubbles: true, detail: { index: openIndex } }));
       this.removeEventListener("gesturechange", this._onGestureChangedListener);
     }
   }
@@ -3327,7 +3367,7 @@ if (!window.customElements.get("product-quick-add")) {
 }
 
 // js/common/product/quick-buy-drawer.js
-import { animate as animate7, timeline as timeline5 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { animate as animate7, timeline as timeline5 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var QuickBuyDrawer = class extends Drawer {
   constructor() {
     super();
@@ -3576,7 +3616,7 @@ if (!window.customElements.get("variant-option-value")) {
 }
 
 // js/common/media/base-media.js
-import { inView as inView4 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { inView as inView4 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var BaseMedia = class extends HTMLElement {
   static get observedAttributes() {
     return ["playing"];
@@ -3763,6 +3803,7 @@ var VideoMedia = class extends BaseMedia {
       this.setAttribute("can-play", "");
       videoElement.addEventListener("play", () => {
         this.setAttribute("playing", "");
+        this.removeAttribute("suspended");
       });
       videoElement.addEventListener("pause", () => {
         if (!videoElement.seeking && videoElement.paused) {
@@ -3776,7 +3817,20 @@ var VideoMedia = class extends BaseMedia {
     if (this.getAttribute("host") === "youtube") {
       prop === "play" ? target.playVideo() : target.pauseVideo();
     } else {
-      target[prop]();
+      if (prop === "play" && !this.hasAttribute("host")) {
+        target.play().catch((error) => {
+          if (error.name === "NotAllowedError") {
+            this.setAttribute("suspended", "");
+            target.controls = true;
+            const replacementImageSrc = target.previousElementSibling?.currentSrc;
+            if (replacementImageSrc) {
+              target.poster = replacementImageSrc;
+            }
+          }
+        });
+      } else {
+        target[prop]();
+      }
     }
   }
 };
@@ -3785,7 +3839,7 @@ if (!window.customElements.get("video-media")) {
 }
 
 // js/common/navigation/accordion-disclosure.js
-import { timeline as timeline6 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { timeline as timeline6 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 
 // js/common/navigation/animated-details.js
 var AnimatedDetails = class extends HTMLDetailsElement {
@@ -3866,7 +3920,7 @@ if (!window.customElements.get("accordion-disclosure")) {
 }
 
 // js/common/navigation/tabs.js
-import { animate as animate8 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { animate as animate8 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var Tabs = class extends HTMLElement {
   static get observedAttributes() {
     return ["selected-index"];
@@ -3954,7 +4008,7 @@ if (!window.customElements.get("x-tabs")) {
 }
 
 // js/common/search/predictive-search.js
-import { animate as animate9 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { animate as animate9 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var PredictiveSearch = class extends HTMLElement {
   constructor() {
     super();
@@ -4066,7 +4120,7 @@ if (!window.customElements.get("search-drawer")) {
 }
 
 // js/common/text/section-header.js
-import { animate as animate10, inView as inView5 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { animate as animate10, inView as inView5 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 var _reveal2, reveal_fn2;
 var SectionHeader = class extends HTMLElement {
   constructor() {
@@ -4106,7 +4160,7 @@ if (!window.customElements.get("marquee-text")) {
 }
 
 // js/theme.js
-import { Delegate as Delegate4 } from "//cdn.shopify.com/s/files/1/0664/2558/5882/t/85/assets/vendor.min.js?v=136053555471622566971680928801";
+import { Delegate as Delegate4 } from "//cdn.shopify.com/s/files/1/0604/5207/7740/t/57/assets/vendor.min.js?v=20880576495916334881691263407";
 (() => {
   const delegateDocument = new Delegate4(document.documentElement);
   if (window.themeVariables.settings.showPageTransition && "animate" in document.documentElement && window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
@@ -4173,6 +4227,7 @@ export {
   FacetSortBy,
   FreeShippingBar,
   GestureArea,
+  GiftCardRecipient,
   HeightObserver,
   LineItem,
   LineItemQuantity,

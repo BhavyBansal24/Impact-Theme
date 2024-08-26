@@ -37,7 +37,6 @@ Supported variables
     {%- assign is_main_product = true -%}
   {%- endif -%}
 
-
   <a href="{% unless is_main_product %}{{ product.url }}{% endunless %}#shopify-product-reviews" class="rating {{ class }}" title="{{ 'product.rating_count' | t: count: rating_count }}" {{ block.shopify_attributes }}>
     {%- if display_mode == 'count' -%}
       <span class="text-sm">{{- 'product.rating_count' | t: count: rating_count -}}</span>
@@ -46,10 +45,6 @@ Supported variables
     {%- endif -%}
 
     <div class="rating__stars" role="img" aria-label="{{ 'general.rating.info' | t: rating_value: rating_value, rating_max: rating_max }}">
-      {%- render 'icon' with 'rating-star', width: 12, height: 12, class: 'rating__star' -%}
-      {%- render 'icon' with 'rating-star', width: 12, height: 12, class: 'rating__star' -%}
-      {%- render 'icon' with 'rating-star', width: 12, height: 12, class: 'rating__star' -%}
-      {%- render 'icon' with 'rating-star', width: 12, height: 12, class: 'rating__star' -%}
       {%- render 'icon' with 'rating-star', width: 12, height: 12, class: 'rating__star' -%}
     </div>
   </a>

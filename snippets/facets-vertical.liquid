@@ -40,13 +40,15 @@ Supported variables
         {%- assign selected_sort_by = results.sort_by | default: results.default_sort_by -%}
 
         {%- for option in results.sort_options -%}
-          {%- if option.value == selected_sort_by -%}
-            {%- assign checked = true -%}
-          {%- else -%}
-            {%- assign checked = false -%}
-          {%- endif -%}
+          {%- if option.name != blank -%}
+            {%- if option.value == selected_sort_by -%}
+              {%- assign checked = true -%}
+            {%- else -%}
+              {%- assign checked = false -%}
+            {%- endif -%}
 
-          {%- render 'checkbox', type: 'radio', label: option.name, name: 'sort_by', value: option.value, checked: checked, context: context -%}
+            {%- render 'checkbox', type: 'radio', label: option.name, name: 'sort_by', value: option.value, checked: checked, context: context -%}
+          {%- endif -%}
         {%- endfor -%}
       </div>
     {%- endcapture -%}
